@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course registration</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="py-5 text-center">
+<!--        <img alt="" class="d-block mx-auto mb-4" height="72" src="assets/svg/bootstrap-solid.svg" width="72">-->
+        <h2>Login using email</h2>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Student Details</h4>
+        <form class="needs-validation-students" id="student-validation" novalidate>
+            <div class="row">
+<!--                <div class="col-md-6 mb-3">-->
+<!--                    <label for="first_name">Roll number</label>-->
+<!--                    <input class="form-control" id="first_name" placeholder="" required type="text" value="">-->
+<!--                    <div class="invalid-feedback">-->
+<!--                        Valid roll number is required-->
+<!--                    </div>-->
+<!--                </div>-->
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input class="form-control" id="email" placeholder="you@example.com" required type="email">
+                <div class="invalid-feedback">
+                    Please enter a valid email address for updates.
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        </form>
+    </div>
+    <br/>
+    <div id="login" class="alert alert-danger" role="alert">
+
+    </div>
+    <hr class="mb-4">
+
+
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/form-validation.js"></script>
+</html>
