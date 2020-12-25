@@ -38,33 +38,6 @@ if(student_form) {
     });
 }
 
-// course_form.onsubmit = async (e) => {
-//     e.preventDefault();
-//     e.stopPropagation();
-//     if (course_form.checkValidity() === true) {
-//       let form_data = new FormData();
-//       form_data.append('name', document.getElementById('name').value);
-//       form_data.append('description', document.getElementById('description').value);
-//       form_data.append('credits', document.getElementById('credits').value);
-//         // $.ajax({
-//         //   type: "POST",
-//         //   url: "api/courses/register",
-//         //   enctype: 'multipart/form-data',
-//         //   data: form_data,
-//         //   processData: false,
-//         //   contentType: false,
-//         // }).done(function(response, status) {
-//         //   console.log(response, status);
-//         // });
-//         let response = await fetch('api/courses/register', {
-//         method: 'POST',
-//         body: form_data
-//       });
-//       let result = await response;
-//       console.log(result);
-//     }
-//     course_form.classList.add('was-validated');
-// };
 function encode(data){
     let query=data.url;
     query+='?'+encodeURI("email_id")+'='+encodeURI(data.params.email_id);
@@ -125,73 +98,7 @@ async function fetch_courses(email){
         }
         console.log(eligible);
         window.location="Course.html";
-        // let courses_option = document.getElementById('course_list');
-        // for(let i = 0 ; i<eligible.length ; i++){
-        //     // courses_option.in
-        //     courses_option.innerHTML = '<input type="checkbox"> eligible[i]</input>';
-        // }
-        // console.log("hiii");
+ 
     }));
-    //     for(var i in faculty)
-    //     {
-    //         courses.push(i);
-    //     }
-    //     var hash=new Object();
-    //     for(var i in courses)
-    //     {
-    //         hash[courses[i]]=[];
-    //     }
-    //     for(var i in prereq) {
-    //         for (var j in prereq[i]) {
-    //             hash[prereq[i][j]].push(i);
-    //         }
-    //     }
-    //     console.log(hash);
-    //     var indegree=new Object();
-    //     for(var i in courses)
-    //     {
-    //         indegree[courses[i]]=0;
-    //     }
-    //     for(var i in prereq)
-    //     {
-    //         indegree[i]=prereq[i].length;
-    //     }
-    //     console.log(indegree);
-    //     var totalcredits=0;
-    //     var courselist=[];
-    //     for(var i in indegree)
-    //     {
-    //         if(!indegree[i])
-    //         {
-    //             courselist.push(i);
-    //         }
-    //     }
-    //     while(!courselist.length)
-    //     {
-    //         courselist
-    //     }
-    // });
-    // var courses=[];
-    // console.log(faculty);
-    // for(var i in faculty)
-    // {
-    //     courses.push(i);
-    // }
-    // var hash=new Object();
-    // for(var i in courses)
-    // {
-    //     hash[courses[i]]=[];
-    // }
-    // for(var i in prereq) {
-    //     for (var j in prereq[i]) {
-    //         hash[prereq[i][j]].push(i);
-    //     }
-    // }
-    // console.log(hash);
-
-   // console.log(temp);
-    // console.log(courses);
-    //console.log(master['preq']);
-    // window.location="Course.html";
 
 }
